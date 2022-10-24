@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+#yusuke {
+--yuyu: #c3b418;
+--yuyu2: #ddd14b;
+--yuyu3: #063985;
+--yuyu4: #1b538f;
+width: 550px; 
+background: #FF4500; 
+margin: auto; 
+border: 3px solid #d1d1d1; 
+display: flex; 
+align-items: center; 
+justify-content: center; 
+flex-direction: column;
+}
+
+#yusuke .topo {
+width: 550px; 
+height: 250px; 
+background: url(https://i.imgur.com/cpurL7r.jpg) #000000ad center/cover; 
+border-radius: 5px 0px 5px 0px; 
+background-blend-mode: multiply; 
+display: flex; 
+flex-direction: column; 
+align-items: center; 
+justify-content: center; 
+text-transform: uppercase; 
+color: #dddddd;
+}
+
+#yusuke .topo frase {
+font: 75px dosis; 
+width: 90%; 
+text-align: center;
+}
+
+#yusuke .topo sub {
+width: 80%; 
+font: 10px mukta; 
+text-align: justify; 
+text-align-last: center; 
+line-height: 10px; 
+margin-top: -10px;
+}
+
+#yusuke .pokemons {
+width: 550px; 
+height: 100px; 
+display: flex; 
+align-items: center; 
+justify-content: center; 
+flex-direction: row;
+margin-top: -48px;
+}
+
+#yusuke .pokemons poke {
+position: relative; 
+z-index: 2; 
+width: 75px; 
+height: 75px; 
+border: 4px solid #ddd; 
+margin-right: 7px; 
+border-radius: 100%; 
+display: flex; 
+align-items: center; 
+justify-content: center; 
+overflow: hidden; 
+background-color: var(--yuyu3);
+}
+
+#yusuke .pokemons poke:nth-last-of-type(1) {
+margin-right: 0px;
+}
+
+#yusuke .pokemons poke img {
+filter: grayscale(1); 
+mix-blend-mode: multiply; 
+width: 75px; 
+height: 75px; 
+border-radius: 100%; 
+transition: 0.5s; 
+transition-delay: 0.5s;
+}
+
+#yusuke .pokemons poke:hover img {
+filter: grayscale(0); 
+mix-blend-mode: unset;
+}
+
+#yusuke .pokemons line {
+width: 550px; 
+height: 4px; 
+position: absolute; 
+z-index: 1; 
+background-color: #ddd;
+}
+
+#yusuke .texto {
+width: 475px; 
+margin-top: 25px; 
+margin-bottom: 25px; 
+color: #0a0a0a; 
+font: 12px verdana; 
+text-align: justify;
+line-height: 14px;
+}
+
+#yusuke .texto b {
+color: var(--yuyu3);
+}
+
+#yusuke dl.codebox {
+    background: var(--yuyu3);
+    color: #F0F0F0!important;
+    border: 0px;
+    font-family: roboto;
+    margin: 1px;
+    font-size: 11px;
+    padding: 10px;
+    border-radius: 0px;
+outline: 0px;
+}
+
+#yusuke dl.codebox dt {
+    display: block;
+    text-shadow: 1px 1px 1px #000;
+    text-align: center;
+    font-weight: bold;
+    font-size: 11px;
+    padding: 5px;
+    margin-bottom: 3px;
+text-transform: uppercase;
+border-bottom: none;
+}
+
+#yusuke .texto .batalha {
+width: 475px; 
+height: 200px; 
+position: relative; 
+margin-bottom: -15px;
+}
+
+#yusuke .texto .batalha ally {
+width: 100px; 
+height: 100px; 
+background-position: center; 
+position: absolute; 
+left: 10px; 
+bottom: 40px;
+}
+
+#yusuke .texto .batalha foe {
+width: 100px; 
+height: 100px; 
+background-position: center; 
+position: absolute; 
+right: 10px; 
+top: 50px;
+}
+
+#yusuke .texto .batalha .box {
+background-color: #0000006e; 
+position: absolute; 
+width: 190px; 
+height: 50px; 
+display: flex; 
+flex-direction: column; 
+padding: 5px; 
+align-items: center; 
+justify-content: center; 
+font: 14px "work sans";
+}
+
+#yusuke .texto .batalha .box .hp {
+width: 190px; 
+height: 15px; 
+border: 2px solid #0a0a0a; 
+background-color: #333; 
+border-radius: 5px; 
+position: relative; 
+display: flex;
+}
+
+#yusuke .texto .batalha .box .hp barra {
+height: 100%; 
+background: linear-gradient(180deg, rgba(1,120,20,1) 0%, #005e0f 50%, rgba(1,120,20,1) 100%); 
+float: left; 
+border-radius: 5px; 
+position: relative; 
+z-index: 1;
+}
+
+#yusuke .texto .batalha .box .hp perc {
+position: absolute; 
+z-index: 2; 
+font: 10px roboto; 
+font-weight: bold; 
+color: #fff; 
+width: 100%; 
+text-align: center;
+}
+
+#yusuke .texto .batalha .box nome {
+width: 185px; 
+text-align: left; 
+padding-left: 5px; 
+color: #fff; 
+text-shadow: 1px 1px 1px #000;
+}
+
+#yusuke .texto .batalha .box nivel {
+width: 185px; 
+text-align: right; 
+padding-right: 5px; 
+color: #fff; 
+text-shadow: 1px 1px 1px #000; 
+font-size: 12px;
+}
+
+#yusuke .texto .batalha .box nivel img {
+height: 12px;
+margin-bottom: -3px;
+}
+
+#yusuke .info {
+width: 550px; 
+height: 150px; 
+display: flex; 
+flex-direction: row;
+}
+
+#yusuke .title:nth-of-type(odd) {
+transform: scaleX(-1) scaleY(-1);
+}
+
+#yusuke .title {
+width: 30px; 
+height: 150px; 
+writing-mode: vertical-rl; 
+display: flex; 
+align-items: center; 
+justify-content: center; 
+font: 12px roboto; 
+text-transform: uppercase; 
+font-weight: bold; 
+background: var(--yuyu3); 
+border-top: 1px solid #1e1e1e;
+color: #fff;
+}
+
+#yusuke .info .details {
+height: 130px; 
+width: 500px; 
+padding: 10px; 
+display: flex; 
+align-items: center; 
+border-top: 1px solid #1e1e1e;
+}
+
+#yusuke .info .details .texto {
+height: 130px; 
+width: 500px; 
+color: #0a0a0a; 
+font: 12px roboto; 
+text-align: justify; 
+overflow: auto; 
+padding-right: 10px;
+}
+
+#yusuke .info .details .texto a, #yusuke .info .details .texto a:visited {
+color: var(--yuyu4); 
+transition: 0.2s;
+}
+
+#yusuke .info .details .texto a:hover {
+color: #0a0a0a;
+}
+
+#yusuke .info .details .texto::-webkit-scrollbar {
+background-color: #c5c5c5; 
+height: 10px; 
+width: 5px;
+}
+
+#yusuke .info .details .texto::-webkit-scrollbar-thumb {
+background-color: var(--yuyu3); 
+height: auto; 
+width: 5px;
+}
+
+#yusuke .info .details .texto strong {
+color: #000;
+}
+
+ a.yu2 {
+color: #ddd; 
+font: 11px roboto;
+}
